@@ -1,5 +1,3 @@
-package temp;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -9,17 +7,17 @@ public class Lab1Bazarnik304 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-     
-        System.out.println("Введіть розмір матриці: ");
+        
+        System.out.println("Enter the matrix size: ");
         int row = sc.nextInt();
 
         
-        System.out.println("Введіть символ заповнювач: ");
+        System.out.println("Enter the fill symbol: ");
         String symbol = sc.next();
 
         
         if(symbol.length() != 1){
-            System.out.println("Введіть коректний символ заповнювач");
+            System.out.println("Please enter a correct fill symbol (one character)");
             return;
         }
 
@@ -31,19 +29,19 @@ public class Lab1Bazarnik304 {
             printMatrix(arr, symbol, row, fileName);
         }catch (IOException e){
             
-            throw new RuntimeException("Сталася помилка під час запису в файл: " + e.getMessage());
+            throw new RuntimeException("An error occurred while writing to the file: " + e.getMessage());
         }
     }
 
         public static void printMatrix(String[][] arr, String symbol, int row, String file) throws IOException {
-        System.out.println("Результат матриці: ");
+        System.out.println("Matrix result: ");
 
         try(FileWriter writer = new FileWriter(file)) {
-           
+            
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j <= i; j++) {
                     arr[i][j] = symbol;
-                   
+                    
                     writer.write(arr[i][j] + " ");
                     System.out.print(arr[i][j] + " ");
                 }

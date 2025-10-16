@@ -8,7 +8,7 @@ def lengthOfEachSubArray(size):
     return arr
 
 def printMatrix(arr, symbol, size, file):
-    print("Результат матриці")
+    print("Matrix result")
 
     with open(file, "w", encoding="utf-8") as writer:
         for i in range(size):
@@ -22,11 +22,11 @@ def printMatrix(arr, symbol, size, file):
         writer.flush()
 
 if __name__ == '__main__':
-    size = int(input("Введіть розмір матриці: "))
-    symbol = input("Введіть символ заповнювач: ")
+    size = int(input("Enter the size of the matrix: "))
+    symbol = input("Enter the fill symbol: ")
 
     if len(symbol) != 1:
-        print("Введіть коректний символ заповнювач")
+        print("Please enter a valid fill symbol")
     else:
         arr = lengthOfEachSubArray(size)
         file_name = "matrix_output.txt"
