@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"KI304.Bazarnik.Lab2","l":"Address"},{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"KI304.Bazarnik.Lab2","l":"Human"},{"p":"KI304.Bazarnik.Lab2","l":"HumanDriver"},{"p":"KI304.Bazarnik.Lab2","l":"Logger"},{"p":"KI304.Bazarnik.Lab2","l":"Name"},{"p":"KI304.Bazarnik.Lab2","l":"Passport"}];updateSearchResults();
